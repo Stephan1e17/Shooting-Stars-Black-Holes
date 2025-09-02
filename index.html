@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-gb">
+<head>
+  <meta charset="utf-8">
+  <title>Snakes & Ladders - Space Style</title>
+  <link rel="stylesheet" href="default.css">
+  <link rel="icon" href="./assets/favicon.png">
+</head>
+<body>
+
+<!-- Title -->
+<header>
+    <h1>💫 Shooting Stars & Black Holes! 🌑</h1>
+</header>
+
+<!-- Instructions message pop up -->
+<div id="instructions" class="instructions-box">
+    <button id="closeInstructions" class="close-btn" aria-label="Close instructions">&times;</button>
+    <h2>How to Play</h2>
+    <ul>
+      <li>Each player takes turns rolling the dice.</li>
+      <li>Your piece moves forward by the number you roll.</li>
+      <li>If you land on a star, you jump ahead to a higher tile.</li>
+      <li>If you land on a black hole, you fall back to a lower tile.</li>
+      <li>Tile 99 is always a black hole that sends you back to the start!</li>
+      <li>The first player to reach tile 100 wins.</li>
+      <li>Good luck and have fun!</li>
+    </ul>
+  </div>
+
+<!-- Winner message pop up -->
+  <div id="winningMessage" class="instructions-box" style="display:none;">
+    <button id="closeWinMessage" class="close-btn" aria-label="Close winning message">&times;</button>
+    <h2>Game Over</h2>
+    <p id="winText"></p>
+</div>
+
+<!-- Sidebar for dice roll and player turn display -->
+<aside>
+    <dl>
+        <dt id="playerTurn">Player 1's turn</dt>
+        <dt>Moves</dt>
+        <dd id="moveCount">0</dd>
+        <div id="controls">
+            <button id="rollBtn">Roll Dice 🎲</button>
+            <p id="diceResult"></p>
+        </div> 
+    </dl>
+</aside>
+
+<!-- Game board and player icons-->
+<main>     
+    <div class="grid-container">
+        <table id="board"></table>
+        <div id="player1" class="player p1"></div>
+        <div id="player2" class="player p2"></div>
+    </div>
+</main>
+
+<!-- ADD RAMDA FROM CDN BELOW -->
+ <!-- Issue with ramda compatibility - Co-pilot fixed this-->
+<script src="https://cdn.jsdelivr.net/npm/ramda@latest/dist/ramda.min.js"></script>
+<script type="module" src="main.js"></script>
+</body>
+</html>
