@@ -1,3 +1,4 @@
 
-# Shooting Stars & Black Holes.
+# Shooting Stars & Black Holes
 
+Run the game using FireFox & Enjoy!
